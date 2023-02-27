@@ -11,9 +11,10 @@ $client = new Client(
     ['base_uri' => 'https://www.reddit.com/'],
 );
 $crawler = new Crawler();
+$sourceUrl = 'https://www.reddit.com/r/worldnews/';
 
 $find = new TopPosts($client, $crawler);
-$posts = $find->findTopPosts('https://www.reddit.com/r/worldnews/');
+$posts = $find->findTopPosts($sourceUrl);
 
 foreach ($posts as $post) {
     echo $post . PHP_EOL;
