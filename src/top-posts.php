@@ -1,3 +1,4 @@
+#!/usr/bin/env php
 <?php
 
 require 'C:\Users\Gabriela\Documents\Projetos\Buscador de Notícias\vendor\autoload.php';
